@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reservations",
+  "info": {
+    "singularName": "reservation",
+    "pluralName": "reservations",
+    "displayName": "Reservation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "numberOfPlaces": {
+      "type": "integer"
+    },
+    "evening": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::evening.evening"
+    }
+  }
+}
